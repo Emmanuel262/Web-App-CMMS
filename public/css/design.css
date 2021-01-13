@@ -1,0 +1,81 @@
+body {
+  background: #000;
+  font-family: sans-serif;
+}
+
+.main {
+  width: 60%;
+  margin: 20% auto;
+  position: relative;
+}
+
+#slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 7px;
+  outline: none;
+  border-radius: 3px;
+}
+
+#slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  z-index: 3;
+  position: relative;
+}
+
+#selector {
+  height: 104px;
+  width: 48px;
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 2;
+}
+
+.select-btn {
+  height: 48px;
+  width: 48px;
+  background-image: url('../img/arrow.JPG');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+}
+
+#selector-value {
+  width: 48px;
+  height: 40px;
+  position: absolute;
+  top: 0;
+  background: #ffd200;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#selector-value::after {
+  content: '';
+  border-top: 17px solid #ffd200;
+  border-left: 24px solid #000;
+  border-right: 24px solid #000;
+  position: absolute;
+  bottom: -14px;
+  left: 0;
+}
+
+#progressBar {
+  width: 50%;
+  height: 7px;
+  background: #ffd200;
+  border-radius: 3px;
+  position: absolute;
+  top: 7px;
+  left: 0;
+}

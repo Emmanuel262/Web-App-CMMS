@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="/css/style.css">
+  <!-- <link rel="stylesheet" href="/css/required.css"> -->
+  <!-- <link rel="stylesheet" href="/css/additions.css"> -->
+  <title></title>
+</head>
+<body>
+  <header id="header">
+    <div class="left">
+      <h1 class="title">CMMS project</h1>
+    </div>
+    <div class="right">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/monitoring/dashboard">dashboard</a></li>
+        <% if (user) { %>
+          <li style="font-size: 1.7rem; font-weight: bold;"><%= user.name %></li>
+          <li><a href="/logout">Log out</a></li>
+        <%} else { %>
+          <li><a href="/login">Log in</a></li>
+          <li><a href="/signup" class="btn">Sign up</a></li>
+        <% } %>
+
+      </ul>
+    </div>
+  </header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav>
+    <h1><a href="/">Ninja Smoothies</a></h1>
+    <ul>
+      <% if (user) { %>
+        <li>Welcome, <%= user.email %></li>
+        <li><a href="/logout">Log out</a></li>
+      <%} else { %>
+        <li><a href="/login">Log in</a></li>
+        <li><a href="/signup" class="btn">Sign up</a></li>
+      <% } %>
+      
+    </ul>
+  </nav>
+   -->

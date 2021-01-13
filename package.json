@@ -1,0 +1,33 @@
+{
+  "name": "cmms",
+  "version": "1.0.0",
+  "description": "coal mine monitoring system detection",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "start:prod": "set NODE_ENV=production&nodemon app.js"
+  },
+  "author": "Emmaneul vicent Alice",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.5",
+    "expres": "0.0.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "express-validator": "^6.9.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.10",
+    "object-to-csv": "^1.0.5",
+    "socket.io": "^3.0.5",
+    "validator": "^13.5.2"
+  },
+  "engines": {
+    "node": "^12"
+  }
+}

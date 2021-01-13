@@ -1,0 +1,61 @@
+<%- include('partials/header'); -%>
+
+<section id="header">
+  <% if(title) { %>
+    <h1><%= title %></h1>
+  <%} else { %>
+  <h1>nothing found</h1>
+  <% } %>
+  <h1 class="main-header">The following list are data sensed by sensors in mining site</h1>
+</section>
+
+<div class="upper-part">
+  <!-- <div class="checkbox">
+    <h3 class="alarm">Alarm</h3>
+    <label class="switch">
+      <input type="checkbox">
+      <div class="switch-btn"></div>
+    </label>
+  </div> -->
+</div>
+
+<div class="display-measurement">
+  <h1>Available data from sensors</h1>
+  <div class="one-row">
+    <div class="table-one">
+      <table class="content-table">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>Temperature</th>
+            <th>Humidity</th>
+            <th>LPG</th>
+            <th>Co2</th>
+            <th>Smoke</th>
+          </tr>
+        </thead>
+        <tbody id="best-table">
+
+          <% data.forEach(function(dat) { %>
+            <tr>
+              <td><%= dat.createdAt.toLocaleDateString() %></td>
+              <td><%= dat.Temperature %></td>
+              <td><%= dat.Humidity %></td>
+              <td><%= dat.LPG %></td>
+              <td><%= dat.Co %></td>
+              <td><%= dat.smoke %></td>
+            </tr>
+          <% }) %>
+        </tbody>
+      </table>
+    </div>
+    
+  </div>
+  
+
+  
+</div>
+
+
+
+<%- include('partials/footer'); -%>
